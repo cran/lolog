@@ -126,33 +126,33 @@ calculateStatistics(mesa ~ edges + triangles + degree(0:15))
 nets <- simulate(flomodel.03,nsim=10) #Generates a list of BinaryNet objects
 plot(nets[[1]])
 
-## ------------------------------------------------------------------------
-data(sampson)
-
-#coersion
-net <- as.BinaryNet(samplike)
-nw2 <- as.network(net)
-print(nw2)
-
-#dyad Extraction
-net[1:2,1:5]
-net$outNeighbors(c(1,2,3))
-
-#dyad assignment
-net[1,1:5] <- rep(NA,5)
-net[1:2,1:5]
-net[1:2,1:5,maskMissing=FALSE] #remove the mask over missing values and see 
-                               #nothing was really changed
-
-#node variables
-net$variableNames()
-net[["group"]]
-net[["rnorm"]] <- rnorm(18)
-net[["rnorm"]]
-
-#See available methods
-#print(DirectedNet)
-#print(UndirectedNet)
+## ---- eval=FALSE---------------------------------------------------------
+#  data(sampson)
+#  
+#  #coersion
+#  net <- as.BinaryNet(samplike)
+#  nw2 <- as.network(net)
+#  print(nw2)
+#  
+#  #dyad Extraction
+#  net[1:2,1:5]
+#  net$outNeighbors(c(1,2,3))
+#  
+#  #dyad assignment
+#  net[1,1:5] <- rep(NA,5)
+#  net[1:2,1:5]
+#  net[1:2,1:5,maskMissing=FALSE] #remove the mask over missing values and see
+#                                 #nothing was really changed
+#  
+#  #node variables
+#  net$variableNames()
+#  net[["group"]]
+#  net[["rnorm"]] <- rnorm(18)
+#  net[["rnorm"]]
+#  
+#  #See available methods
+#  #print(DirectedNet)
+#  #print(UndirectedNet)
 
 ## ---- tidy=FALSE---------------------------------------------------------
 flomodel.04 <- lolog(flomarriage ~ edges() + preferentialAttachment(), 

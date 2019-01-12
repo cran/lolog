@@ -1,4 +1,4 @@
-4f100b828b6e78a397dce4d97c2c74b8 *DESCRIPTION
+8d85c619cd190b5d188c63d3afecd956 *DESCRIPTION
 5ac3377c0c6e2bc8170b14c472c80fbb *LICENCE
 de9ee968e400481d9c30591583e0539c *NAMESPACE
 6b46f777f99c85cc8465c67ba8a84748 *R/RcppExports.R
@@ -14,15 +14,15 @@ b51519b4be9fa6147cee5b415779527d *R/cpp-model.R
 21a9791257963ae7b57e147dea25c76e *R/util.R
 18d241797cfa5976cc2cb4263c9a5efc *R/zzz.R
 62fa03954cbfbdee500184980ebc9bff *README.md
-3dc840fa6f18a4070d5721a1fd9e4638 *build/vignette.rds
+c86b4e1a1c925edf25e2a9195521826a *build/vignette.rds
 c4cdebd8c4138a915020322e1f5a30fb *data/lazega.rda
 d841d1bbcdc375b6195cc96503e2028d *data/ukFaculty.rda
 3c07925264252ae94dc828c070da087e *inst/doc/lolog-ergm.R
 d46de78adb6564e547a1d00bff0f8f68 *inst/doc/lolog-ergm.Rmd
-e082b5915a8b09800e8cde9245be2621 *inst/doc/lolog-ergm.pdf
-90c7ae94025181ed642421e6169feb02 *inst/doc/lolog-introduction.R
-506ebc9c4e59b81b24852a8ec3fcddc1 *inst/doc/lolog-introduction.Rmd
-eb97330bb76418c556cd2f4401e96363 *inst/doc/lolog-introduction.pdf
+1e605d166747ded753d0fb892016a78a *inst/doc/lolog-ergm.pdf
+6cbaca7d2b22ccb0fafd6745b0307e07 *inst/doc/lolog-introduction.R
+7471266078e77ba1519b7a91727c351a *inst/doc/lolog-introduction.Rmd
+a2bb453940db9a56999bf7aa73f9088b *inst/doc/lolog-introduction.pdf
 2632e8a2d6373f926fff1ee90306a709 *inst/examplePackage/LologExtension/DESCRIPTION
 05d89464cf673782df0c67f6f9e55d96 *inst/examplePackage/LologExtension/NAMESPACE
 aee3a30d58af1d0e556a50558710ab5d *inst/examplePackage/LologExtension/R/RcppExports.R
@@ -36,12 +36,12 @@ cdd8a675d0d53ab6b85affc8be94cc06 *inst/examplePackage/LologExtension/src/MinDegr
 ef6bbbf2408c0e8fde3536d7589e6c48 *inst/examplePackage/LologExtension/src/RcppExports.cpp
 c6af0f94b140a555693e46cbe40c5e11 *inst/examplePackage/LologExtension/src/lolog_hello_world.cpp
 4bb1e6d604b139c2564d3d628f51518b *inst/examplePackage/LologExtension/src/lolog_hello_world.h
-3cdd3d69380892464a72bee5ae199884 *inst/include/BinaryNet.h
+1e7465dc0c3c027cc9b7825783fb2bb6 *inst/include/BinaryNet.h
 a50dc981864f543bc4fe28acbe859a8b *inst/include/Constraint.h
 e0e851e62faccbfcd3b4c6a1aec966fb *inst/include/Constraints.h
 9e047a152a968db3e26493f310393125 *inst/include/DirectedVertex.h
-19bbb365711e54aa0c2ae55f4bda881c *inst/include/LatentOrderLikelihood.h
-9e1665f88c514540324a434fb7f6ef96 *inst/include/Model.h
+8b7141ab7cbf753055bbbeb75b1037f5 *inst/include/LatentOrderLikelihood.h
+55992c8ed1bcb875136bf96a28fd6911 *inst/include/Model.h
 87fbc92b6df6197837e769bf0c053e0c *inst/include/Offset.h
 bbaf6188cff2f25328ca1ad571751628 *inst/include/Offsets.h
 61017508f5ed2c747d3dd5fad3f87e53 *inst/include/ParamParser.h
@@ -49,7 +49,7 @@ d3ad6ba050d9cc5e4c64d839e3c2b9ab *inst/include/Ranker.h
 b8e554e6a9bb79c1fe6b472b77cbe502 *inst/include/ShallowCopyable.h
 8a14512abb26c0d6db0bbd587bbdd28d *inst/include/Stat.h
 ce350fe90b829c0ee060c2ddd6a35d26 *inst/include/StatController.h
-3b7286c2e4cbc58abe61775c71ad9c34 *inst/include/Stats.h
+1a3adb43cc3c5c688eeeb37aa32f8c5f *inst/include/Stats.h
 fa379c5c109bd93ddaec4935a958f20c *inst/include/UndirectedVertex.h
 782fbabebfc8a81898021cfe74302e36 *inst/include/VarAttrib.h
 2152d7c564ddd2821fe0e1f13dd2382d *inst/include/Vertex.h
@@ -60,7 +60,7 @@ e20fc0bfb6787e35de460f3edd9805d7 *inst/include/test_LatentOrderLikelihood.h
 bf20b25bca371b0a605f5544c24d4616 *inst/include/test_ParamParser.h
 8519b4fbdfbcdde5300a51cf1323a752 *inst/include/test_Stats.h
 a98653f29dc134ecb71205eb99217baf *inst/include/tests.h
-93a32d6d40b6a1c3cf19f937b9f61c31 *inst/include/util.h
+4b13a1d6898bc546248a63efdac1128e *inst/include/util.h
 1285cee9d3af6b7f815d1c47db0b56dd *man/BinaryNet.Rd
 984c0151140f91f715ad8f8fc11dd9ca *man/LatentOrderLikelihood.Rd
 c8dab92cc21ccda2a8810e0d1529d437 *man/LologModels.Rd
@@ -107,7 +107,7 @@ abae1ba236de1d17d92af1ad220fd995 *src/test_BinaryNet.cpp
 2c3656f478f22c3c065bb12bb5cf1a99 *src/test_Stats.cpp
 311f321418daa7e030f8720ab4c6a0f6 *src/tests.cpp
 92366c8bed258fbf5853f0d09d838a8c *tests/tests.R
-c5b2c8cc20c98634ce86259515371256 *tests/testthat/test-BinaryNet.R
+acda1bfcdb2076594c6d60930e993664 *tests/testthat/test-BinaryNet.R
 b0f47731450ef1c58c0d0c0bf99d1b2c *tests/testthat/test-Cpp.R
 aa9bda7c474803d2566ff5e36c675e8c *tests/testthat/test-inline.R
 4d5d36b6ccd9203405abc0874e248cd1 *tests/testthat/test-likelihood.R
@@ -115,4 +115,4 @@ bb75b4d1dc29e97fd1420fb84024c9b3 *tests/testthat/test-lolog-fit.R
 5950baf65206c764c636cb123ef20a16 *tests/testthat/test-model-creation.R
 a1b146e75716b7a2e27492f68e9ded1f *tests/testthat/test-stats.R
 d46de78adb6564e547a1d00bff0f8f68 *vignettes/lolog-ergm.Rmd
-506ebc9c4e59b81b24852a8ec3fcddc1 *vignettes/lolog-introduction.Rmd
+7471266078e77ba1519b7a91727c351a *vignettes/lolog-introduction.Rmd
