@@ -134,7 +134,7 @@ NULL
 #' \item{\code{transitivity()}  (order-independent) (undirected)}{ 
 #' The Soffer-Vazquez   transitivity. This is clustering metric that adjusts for large degree
 #' differences and is described by C in Equation 6 of 
-#' \url{https://pdfs.semanticscholar.org/7af5/f8c871d99b868cd0ed70c5fd09f59b399769.pdf}. Note 
+#' \url{https://www.semanticscholar.org/paper/Network-clustering-coefficient-without-biases.-Soffer-V%C3%A1zquez/7af5f8c871d99b868cd0ed70c5fd09f59b399769?p2df}. Note 
 #' The approximation of the number of possible shared neighbors between node i and j of min(d_i,d_j) - 1
 #' in this implementation.
 #'  }
