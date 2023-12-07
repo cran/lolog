@@ -239,11 +239,11 @@ summary(fauxmodel.02)
 
 We see strong evidence of additional transitivity, but little evidence that the degrees have higher spread than expected given the other terms. With LOLOG models, we avoid some of the degeneracy problems present in ERGM models. Let's try the same model in `ergm`
 
-```{r, eval=FALSE}
+```{r, error=TRUE}
 fauxmodel.01.ergm <- ergm(mesa ~edges + nodematch('GradeCat') + nodematch('Race') + 
                             triangles + kstar(2))
 ```
-The preceding will fail if run. Of course it is highly recommended that you take great care in selecting terms for use with `ergm` for precisely the reason that many can lead to model degeneracy. A much better choice here for the `ergm` model would have been to use `gwesp` and `gwdegree` in place of `triangles` and 2-stars.
+Of course it is highly recommended that you take great care in selecting terms for use with `ergm` for precisely the reason that many can lead to model degeneracy. A much better choice here for the `ergm` model would have been to use `gwesp` and `gwdegree` in place of `triangles` and 2-stars.
 
 ## Specifying Vertex Inclusion Order
 

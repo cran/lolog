@@ -102,7 +102,7 @@ NULL
 #' @name lolog-terms
 #' @docType methods
 #' @section Statistic Descriptions:
-#' \itemize{
+#' \describe{
 #' \item{\code{edges}  (dyad-independent)  (order-independent)  (directed)  (undirected)}{ 
 #' \emph{Edges:} This term adds one network statistic equal to the number of edges 
 #' (i.e. nonzero values) in the network. }
@@ -133,8 +133,7 @@ NULL
 #' 
 #' \item{\code{transitivity()}  (order-independent) (undirected)}{ 
 #' The Soffer-Vazquez   transitivity. This is clustering metric that adjusts for large degree
-#' differences and is described by C in Equation 6 of 
-#' \url{https://www.semanticscholar.org/paper/Network-clustering-coefficient-without-biases.-Soffer-V%C3%A1zquez/7af5f8c871d99b868cd0ed70c5fd09f59b399769?p2df}. Note 
+#' differences and is described by C in Equation 6 of #' \url{https://pubmed.ncbi.nlm.nih.gov/16089694/}. Note 
 #' The approximation of the number of possible shared neighbors between node i and j of min(d_i,d_j) - 1
 #' in this implementation.
 #'  }
@@ -156,7 +155,13 @@ NULL
 #' The \code{d} argument is a vector of distinct integers. This term adds one
 #' network statistic to the model for each element in \code{d}; the \eqn{i}th
 #' such statistic equals the number of nodes in the network of degree
-#' \code{d[i]}, i.e. with exactly \code{d[i]} edges. 
+#' \code{d[i]}, i.e. with exactly \code{d[i]} edges.
+#' For directed networks if direction="undirected"
+#' degree is counted as the sum of the in and out degrees of a node. If direction="in" then in-degrees are
+#' used and direction="out" indicates out-degrees.
+#' 
+#' If lessThanOrEqual=TRUE, then the count is the number of nodes with degree less than or equal to d.
+#'   }
 #' 
 #' \item{\code{twoPath} (order-independent) (directed)  (undirected)}{
 #'  This term adds one statistic to the model, equal to the number of 2-paths in
@@ -169,12 +174,6 @@ NULL
 #'  \eqn{\{i,j\}, \{j,k\}}. That is, it is an undirected path of length 2 from
 #'  \eqn{i} to \eqn{k} via \eqn{j}, also known as a 2-star.}
 #' 
-#' For directed networks if direction="undirected"
-#' degree is counted as the sum of the in and out degrees of a node. If direction="in" then in-degrees are
-#' used and direction="out" indicates out-degrees.
-#' 
-#' If lessThanOrEqual=TRUE, then the count is the number of nodes with degree less than or equal to d.
-#'   }
 #'   
 #'   
 #' \item{\code{ degreeCrossProd() (order-independent)  (undirected) }}{ 
@@ -332,7 +331,7 @@ NULL
 #'  }
 #'  
 #' @section Constraint Descriptions:
-#' \itemize{
+#' \describe{
 #' \item{\code{boundedDegree(lower,upper)}  (order-independent)  (undirected)}{ 
 #' Adds a constraint that the degrees for the network must be between lower and upper.
 #'   }

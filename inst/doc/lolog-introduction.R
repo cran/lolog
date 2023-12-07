@@ -97,9 +97,9 @@ fauxmodel.02 <- lolog(mesa ~edges + nodeMatch('GradeCat') + nodeMatch('Race') +
                         triangles + star(2), verbose=FALSE)
 summary(fauxmodel.02)
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  fauxmodel.01.ergm <- ergm(mesa ~edges + nodematch('GradeCat') + nodematch('Race') +
-#                              triangles + kstar(2))
+## ---- error=TRUE--------------------------------------------------------------
+fauxmodel.01.ergm <- ergm(mesa ~edges + nodematch('GradeCat') + nodematch('Race') + 
+                            triangles + kstar(2))
 
 ## -----------------------------------------------------------------------------
 library(network)
